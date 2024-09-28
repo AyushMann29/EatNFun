@@ -1,11 +1,11 @@
-SIPnPLAY wants a dream website for their cafe. Although, the owner had some requests from it's developers:-
+EatNFun wants a dream website for their cafe. Although, the owner had some requests from it's developers:-
 1. Need a good UI/UX 🖌️
 2. Need a menu 🍲
 3. Some games and fun 🎲
 4. Astheatics 😎
     
 Project Overview:
-SIPnPlay is a website designed for a board game shop located in Park Slope, Brooklyn. It serves boba tea and small bites while providing a space for gamers to enjoy various board games and events.
+EatNFun is a website designed for a board game shop. It serves boba tea and small bites while providing a space for gamers to enjoy various board games and events.
 
 #Project Goals:
 1. Create a user-friendly and approachable UI/UX design.
