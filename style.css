@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy-Bold';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Navbar */
+nav{
+    color: WHITE;
+    position: relative;
+    background-color: #111;
+    display: flex;
+    height: 10vh;
+    align-items: flex-start;
+    width: 90vw;
+    padding: 2vw 8.5vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav h1{
+    font-size: 1.6vw;
+}
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-part2 h4{
+    font-size: 0.7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2.6vw;
+}
+
+.nav-part2 h5 {
+    margin-bottom: 1vw;
+    display: none;
+    overflow: hidden;
+}
+
+.nav-part2 h5 span{
+    font-size: 0.74vw;
+    font-weight: 500;
+    display: inline-block;
+    transform: translateY(25px);
+    
+}
+
+nav button{
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    padding: 12px 12px;
+    border-radius: 50px;
+    border: none;
+    font-size: 0.85vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav button:hover{
+    background-color: #0BA34E;
+    color: #111;
+    cursor: pointer;
+}
+
+nav button svg{
+    height: 0.85vw;
+    margin-left: 1.6vw;
+}
+
+#nav-bottom{
+    width: 83%;
+    height: 0vh;
+    position: absolute;
+    background-color: #111;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 1px solid white;
+}
+
+/* Code of Ayush Mann aka Sonic the Hedgehog */
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 3;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+
+    top: -20px;
+    left: 70%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+body {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    height: 100vh; /* Ensures viewport height coverage */
+    margin: 0; /* Remove any margins */
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 6vw;
+    position: relative;
+    top:15%;
+    left: 5%;
+}
+
+.card {
+    /* Specify the grid area for each card */
+    grid-area: auto;
+}
+
+/* Example grid area placement for each card */
+.card:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2; /* Start at row 1, column 1 and end at row 2, column 2 */
+}
+
+.card:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3; /* Start at row 1, column 2 and end at row 2, column 3 */
+}
+
+.card:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2; /* Start at row 2, column 1 and end at row 3, column 2 */
+}
+
+/* Add more styles for other cards as needed */
+
+  
+
+  
+
+.card{
+border-width: 35px 25px 75px 25px;
+width: 10.41vw;
+height: 21.45vh;
+background-color: transparent;
+
+}
+
+
+
+#cardUp{
+border: solid #ffffff;
+z-index: 2;
+border-width: 3.75vh 1.5vw 8vh 1.5vw;
+rotate: 5deg;
+box-shadow: 10px 10px 10px;
+position: absolute;
+top:0px
+}
+#cardUp3{
+border: solid #ffffff;
+border-width: 3.75vh 1.5vw 8vh 1.5vw;
+z-index: 2;
+rotate: 5deg;
+box-shadow: 10px 10px 10px;
+position: absolute;
+top:44vh;
+
+}
+
+#cardDown{
+border: solid #bebbbb;
+color: white;
+border-width: 3.75vh 1.5vw 8vh 1.5vw;
+display: flex;
+justify-content: center;
+align-items: center;
+rotate: -5deg;
+z-index: 1;
+transition: 0.5s;
+}
+
+.cardWhole:hover{
+cursor: pointer;
+}
+
+.cardWhole:hover #cardDown {
+rotate: -15deg; 
+left: 20px;
+}
+
+.mainPageText{
+font-family: "Playwrite CU", cursive;
+font-size: 3.125rem;
+font-optical-sizing: auto;
+font-weight: bold;
+font-style: normal;
+color: #ffffff;
+}
+
+
+/*  Page 3 code by ankit  */
+.page3{
+    height: 125vh;
+    width: 101.1%;
+    background-image: url(home.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top:200px;
+    color: #111;
+    text-align: center;
+}
+
+.page3>h1{
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.page3 .center-div{
+    height: 105vh;
+    margin:  0 7vw;
+    width: 85%;
+}
+
+.page3 .center-div #store{
+    height: 34.4vh;
+    width: 98.5%;
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#left-store{
+    height: 100%;
+    width: 50%;
+    margin-right: 1vh;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+}
+#right-store{
+    height: 100%;
+    width: 50%;
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+}
+
+#menu-item{
+    height: 100%;
+    width: 60%;
+    border-left: #111 2px solid;
+}
+
+#left-store h3{
+    font-size: 2vw;
+    padding-left: 3vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 13vh;
+}
+#right-store h3{
+    font-size: 2vw;
+    padding-left: 3vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 13vh;
+}
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIPnPlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+        <h1>Sip-n-Play</h1>
+        <div class="nav-part2">
+            <div class="nav-elem">
+                <h4>Game Table Bookings</h4>
+                <h5><span>1 Hour</span></h5>
+                <h5><span>3 Hours</span></h5>
+                <h5><span>6 Hours</span></h5>
+                <h5><span>Whole day</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>Group/Corporate Outings</h4>
+                <h5><span>Daytime Group Function</span></h5>
+                <h5><span>Semi Group Function</span></h5>
+                <h5><span>Plan Your Function</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>E-shop</h4>
+                <h5><span>Coffee</span></h5>
+                <h5><span>Tea</span></h5>
+                <h5><span>Bevarages</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>About Us</h4>
+                <h5><span>Our Story</span></h5>
+                <h5><span>Customer's feedback</span></h5>
+                <h5><span>Careers</span></h5>
+                <h5><span></span></h5>
+                <h5><span>News & Articles</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>Contact Us</h4>
+                <h5><span>Manager</span></h5>
+                <h5><span>Co-Manager</span></h5>
+                <h5><span>Reception</span></h5>
+            </div>
+        </div>
+        <button>Let's talk<svg fill="none" viewBox="0 0 20 20">
+                <path fill="#fff"
+                    d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z">
+                </path>
+            </svg></button>
+        <div id="nav-bottom">
+
+        </div>
+    </nav>
+
+    <div class="cardContainer">
+        <div class="cardWhole" id="cardWhole1" href=#cardContainer>
+        <span id="cardDown" class="card">
+          <p class="mainPageText">Home</p>
+        </span>
+        <span id="cardUp" class="card">
+        </span>
+        </div>
+    
+        <div class="cardWhole" id="cardWhole2" onclick="myFunction1()">
+        <span id="cardDown" class="card popuptext">
+            <div class="popup">
+                <span class="popuptext" id="myPopup1">Manager : 102894798!</span>
+              </div>
+          <p class="mainPageText">Contact</p>
+        </span>
+        <span id="cardUp" class="card">
+        </span>
+        </div>
+  
+    
+        <div class="cardWhole" id="cardWhole3" onclick="menu()">
+        <span id="cardDown" class="card">
+          <p class="mainPageText">Menu</p>
+        </span>
+        <span id="cardUp" class="card">
+        </span>
+        </div>
+    
+        <div class="cardWhole" id="cardWhole4">
+        <span id="cardDown" class="card">
+          <p class="mainPageText">Games</p>
+        </span>
+        <span id="cardUp3" class="card">
+        </span>
+        </div>
+    
+        <div class="cardWhole" id="cardWhole5" onclick="myFunction3()">
+            <span id="cardDown" class="card popuptext">
+                <div class="popup">
+                    <span class="popuptext" id="myPopup3">30% off with codedex club membership!</span>
+                  </div>
+          <p class="mainPageText">Events</p>
+        </span>
+        <span id="cardUp3" class="card">
+        </span>
+        </div>
+    
+        <div class="cardWhole" id="cardWhole6" onclick="myFunction2()">
+        <span id="cardDown" class="card">
+            <div class="popup" onclick="myFunction()">
+                <span class="popuptext" id="myPopup2">A place best for everyone to enjoy and have fun!</span>
+                </span>
+              </div>
+          <p class="mainPageText">About</p>
+        </span>
+        <span id="cardUp3" class="card">
+        </span>
+        </div>
+      </div>
+    
+
+    <div class="page3" id="menu">
+        <h1>Cafeteria Menu</h1>
+        <div class="center-div">
+            <div class="container1" id="store">
+                <div id="left-store">
+                    <h3>Cappuccino</h3>
+                    <div id="menu-item">
+
+                    </div>
+                </div>
+                <div id="right-store">
+                    <h3>Cappuccino</h3>
+                    <div id="menu-item">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container2" id="store"><div id="left-store">
+                    <h3>Cappuccino</h3>
+                    <div id="menu-item">
+
+                    </div>
+                </div>
+                <div id="right-store">
+                    <h3>Cappuccino</h3>
+                    <div id="menu-item">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container3" id="store"><div id="left-store">
+                    <h3>Cappuccino</h3>
+                    <div id="menu-item">
+
+                    </div>
+                </div>
+                <div id="right-store">
+                    <h3>Cappuccino</h3>
+                    <div id="menu-item">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
