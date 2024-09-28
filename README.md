@@ -1,6 +1,3 @@
-
-##Track 1
-Track question-
 SIPnPLAY wants a dream website for their cafe. Although, the owner had some requests from it's developers:-
 1. Need a good UI/UX 🖌️
 2. Need a menu 🍲
