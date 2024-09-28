@@ -1,12 +1,4 @@
 
-## SIPnPlay Project Documentation   
-We team of 3 members from India successfully made a websites with such requests and added some extra features
-Team Members:
-    Srijita Mallik
-    Ayush Mann
-    Ankit Kumar
-
-
 ##Track 1
 Track question-
 SIPnPLAY wants a dream website for their cafe. Although, the owner had some requests from it's developers:-
@@ -60,6 +52,10 @@ Future Enhancements:
 Implement real-time updates for the events calendar.
 Enhance accessibility features and optimize SEO further.
 Expand the 3D menu to include more interactive elements and product details.
+
+## Running
+-> Clone the project
+-> Open index.html
 
 
 ## Conclusion:
