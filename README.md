@@ -51,9 +51,10 @@ Enhance accessibility features and optimize SEO further.
 Expand the 3D menu to include more interactive elements and product details.
 
 ## Running
--> Clone the project
--> Open index.html
+-> Clone the project.
+
+-> Open index.html.
 
 
 ## Conclusion:
-The SIPnPlay project represents a collaborative effort to create an engaging and functional website for a board game cafe. It incorporates modern web technologies to deliver a vibrant user experience while meeting the client's requirements effectively.
+The EatNFun project represents a collaborative effort to create an engaging and functional website for a board game cafe. It incorporates modern web technologies to deliver a vibrant user experience while meeting the client's requirements effectively.
