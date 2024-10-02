@@ -52,3 +52,7 @@ function myFunction1() {
     popup.classList.toggle("show");
   }
 
+  document.getElementById("scrollBtn").addEventListener("click", () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+  });
