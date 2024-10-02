@@ -289,3 +289,88 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 13vh;
 }
+
+/* Footer */
+footer {
+    background-color: #15003b;
+    color: white;
+    height: 300px;
+    text-align: center;
+    position: relative; 
+    z-index: 1; 
+    width: 100%; 
+
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}
+
+footer .footer-content .brand-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f39c12;
+}
+
+.scroll-top {
+    margin-top: 10px;
+}
+
+.arrow-up {
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    background-color: #f39c12;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-up:hover {
+    background-color: #e67e22;
+}
+
+.footer-bottom-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .brand-name {
+        font-size: 1.5rem;
+    }
+
+    .social-icon {
+        font-size: 1.3rem;
+    }
+
+    .arrow-up {
+        font-size: 1.5rem;
+    }
+}
