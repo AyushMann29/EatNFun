@@ -378,7 +378,7 @@ color: #f39c12;
 margin-top: 10px;
 }
 
-.arrow-up {
+#scrollBtn {
 display: inline-block;
 color: white;
 font-size: 2rem;
@@ -386,9 +386,10 @@ background-color: #f39c12;
 padding: 10px;
 border-radius: 50%;
 transition: background-color 0.3s ease;
+cursor: pointer;
 }
 
-.arrow-up:hover {
+#scrollBtn:hover {
 background-color: #e67e22;
 }
 
