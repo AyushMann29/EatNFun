@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-style.css" />
+  </head>
+  <body>
+    <nav class="contact-nav">
+      <a href="../index.html"><h1>Eat-N-Fun</h1></a>
+    </nav>
+    <form id="contact-form">
+      <div class="form-card">
+        <h2>Contact Us</h2>
+
+        <p>
+          If you have any questions, feedback, or just want to say hello, feel
+          free to reach out to us. We'd love to hear from you.
+        </p>
+
+        <label for="name">Full Name </label>
+        <input type="text" id="name" name="name" placeholder=" Your Name" />
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email Address </label>
+        <input type="text" id="email" name="email" placeholder="Your Email" />
+        <small class="error" id="emailError"></small>
+
+        <label for="subject">Subject </label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" />
+        <small class="error" id="subjectError"></small>
+
+        <label for="message">Message </label>
+        <textarea id="message" placeholder="Write a message"></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button type="submit" class="form-btn">Send Message</button>
+      </div>
+    </form>
+
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Success</h2>
+        <p>Your form has been successfully submitted.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

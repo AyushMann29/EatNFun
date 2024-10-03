@@ -564,6 +564,11 @@ nav.dark-mode {
     font-weight: 700;
 }
 
+.dropdown a{
+    text-decoration: none;
+    color: #178693;
+}
+
 .nav-elem:hover .dropdown {
     display: block;
     opacity: 1;
