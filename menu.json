@@ -1,0 +1,88 @@
+{
+  "menuItems": [
+    {
+      "name": "Espresso",
+      "description": "Rich and bold espresso shot.",
+      "price": "$3.00",
+      "image": "./images/Espresso.jpg",
+      "category": "Coffee"
+    },
+    {
+      "name": "Cappuccino",
+      "description": "Creamy cappuccino topped with foam.",
+      "price": "$4.00",
+      "image": "./images/Cappuccino.jpg",
+      "category": "Coffee"
+    },
+    {
+      "name": "Latte",
+      "description": "Smooth latte with a touch of milk.",
+      "price": "$4.50",
+      "image": "./images/Latte.jpg",
+      "category": "Coffee"
+    },
+    {
+      "name": "Mocha",
+      "description": "Delicious mocha with chocolate and espresso.",
+      "price": "$4.75",
+      "image": "./images/Mocha.jpg",
+      "category": "Coffee"
+    },
+    {
+      "name": "Green Tea",
+      "description": "Refreshing green tea with antioxidants.",
+      "price": "$2.50",
+      "image": "./images/Green Tea.jpg",
+      "category": "Tea"
+    },
+    {
+      "name": "Black Tea",
+      "description": "Strong black tea for a perfect morning.",
+      "price": "$2.00",
+      "image": "./images/Black Tea.jpg",
+      "category": "Tea"
+    },
+    {
+      "name": "Chai Latte",
+      "description": "Spiced chai latte with steamed milk.",
+      "price": "$3.50",
+      "image": "./images/Chai Latte.jpg",
+      "category": "Tea"
+    },
+    {
+      "name": "Mint Lemonade",
+      "description": "Cool and refreshing mint lemonade.",
+      "price": "$2.00",
+      "image": "./images/Mint Lemonade.jpg",
+      "category": "Juice"
+    },
+    {
+      "name": "Orange Juice",
+      "description": "Freshly squeezed orange juice.",
+      "price": "$3.00",
+      "image": "./images/Orange Juice.jpg",
+      "category": "Juice"
+    },
+    {
+      "name": "Apple Juice",
+      "description": "Refreshing apple juice with a hint of cinnamon.",
+      "price": "$2.50",
+      "image": "./images/Apple Juice.jpg",
+      "category": "Juice"
+    },
+    {
+      "name": "Berry Smoothie",
+      "description": "Smooth and delicious berry smoothie.",
+      "price": "$4.00",
+      "image": "./images/Berry Smoothie.jpg",
+      "category": "Smoothie"
+    },
+    {
+      "name": "Tropical Smoothie",
+      "description": "A mix of tropical fruits blended to perfection.",
+      "price": "$4.50",
+      "image": "./images/Tropical Smoothie.jpg",
+      "category": "Smoothie"
+    }
+  ]
+}
