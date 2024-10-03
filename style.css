@@ -714,3 +714,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+#connect-button{
+    background-color:  #0BA34E;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    border:  #0BA34E;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+#connect-button:hover{
+    background-color: #daece2;
+    color: #0BA34E;
+}
