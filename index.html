@@ -6,6 +6,7 @@
     <title>EatNFun</title>
 <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="light-mode">
  
@@ -59,11 +60,9 @@
       <button id="mode-toggle" style="margin-top: 60px;">🌙</button>
 
 
-        <button style="background-color: bisque;padding: 13px;margin: 20px;border-radius: 50%;border: 3px solid rgb(5, 195, 185);">Connect<svg fill="none" viewBox="0 0 20 20">
-                <path fill="#fff"
-                    d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z">
-                </path>
-            </svg></button>
+        <button id="connect-button">Connect<br>
+            <i class="fa fa-pencil" style="font-size:24px"></i>
+        </button>
         <div id="nav-bottom">
         </div>
     </nav>
@@ -134,52 +133,13 @@
         </div>
       </div>
     
-
-    <div class="page3" id="menu">
-        <h1>Cafeteria Menu</h1>
-        <div class="center-div">
-            <div class="container1" id="store">
-                <div id="left-store">
-                    <h3>Cappuccino</h3>
-                    <div id="menu-item">
-
-                    </div>
-                </div>
-                <div id="right-store">
-                    <h3>Cappuccino</h3>
-                    <div id="menu-item">
-
-                    </div>
-                </div>
-            </div>
-            <div class="container2" id="store"><div id="left-store">
-                    <h3>Cappuccino</h3>
-                    <div id="menu-item">
-
-                    </div>
-                </div>
-                <div id="right-store">
-                    <h3>Cappuccino</h3>
-                    <div id="menu-item">
-
-                    </div>
-                </div>
-            </div>
-            <div class="container3" id="store"><div id="left-store">
-                    <h3>Cappuccino</h3>
-                    <div id="menu-item">
-
-                    </div>
-                </div>
-                <div id="right-store">
-                    <h3>Cappuccino</h3>
-                    <div id="menu-item">
-
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="menu-container" style="margin-top: 20%;">
+        <h1 class="menu-title">Cafeteria Menu</h1>
+        <div id="categoryButtons" class="category-buttons"></div> <!-- Category buttons here -->
+        <div id="menuGrid" class="menu-grid"></div> <!-- Menu items grid here -->
     </div>
+    
+    
 <br><br><br><br>
     <footer class="footer">
         <div class="footer-content">
@@ -203,5 +163,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script src="dark.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html> 
