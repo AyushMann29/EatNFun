@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        .clearfix:before,
+        .clearfix:after {
+            display: table;
+            line-height: 0;
+            content: ""
+        }
+
+        .clearfix:after {
+            clear: both
+        }
+
+        body {
+            background: rgb(0, 127, 114);
+        }
+
+        .calender {
+            margin: 40px auto;
+            width: 70%;
+            padding: 20px;
+            background: #f7f7f7;
+            border: 1px solid #ccc;
+            color: rgb(0, 127, 114);
+            position: relative;
+        }
+
+        .calender:before,
+        .calender:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            box-shadow: inherit;
+            -webkit-transform: rotate(2deg);
+            box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+        }
+
+        .calender::after {
+            -webkit-transform: rotate(-1deg)
+        }
+
+        .calender h1 {
+            font-family: 'Montserrat';
+            width: 100%;
+            text-align: center;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, .6);
+        }
+
+        .calender .day {
+            display: block;
+            width: 13.5%;
+            height: 0;
+            padding-top: 6%;
+            padding-bottom: 8%;
+            float: left;
+            text-align: center;
+            background: #ddd;
+            border: 1px solid #f7f7f7;
+            font-family: sans-serif;
+            font-size: 1.4em;
+            -webkit-transition: all .2s ease;
+            cursor: pointer;
+            position: relative;
+            /* For positioning the event */
+        }
+
+        .calender .day:hover {
+            background: rgb(0, 127, 114);
+            color: #f7f7f7;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, .4);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+        }
+
+        .calender .day.current {
+            background: rgba(236, 154, 24, 1);
+            color: #f7f7f7;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, .4);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+        }
+
+        .event {
+            margin-top: 5px;
+            padding: 5px;
+            background: #4caf50;
+            color: white;
+            border-radius: 3px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calender">
+
+        <div class="month">
+            <h1>October - 2024</h1>
+            <span class="day" onclick="addEvent(this)">1</span>
+            <span class="day" onclick="addEvent(this)">2</span>
+            <span class="day" onclick="addEvent(this)">3</span>
+            <span class="day" onclick="addEvent(this)">4</span>
+            <span class="day" onclick="addEvent(this)">5</span>
+            <span class="day" onclick="addEvent(this)">6</span>
+            <span class="day" onclick="addEvent(this)">7</span>
+            <span class="day" onclick="addEvent(this)">8</span>
+            <span class="day" onclick="addEvent(this)">9</span>
+            <span class="day" onclick="addEvent(this)">10</span>
+            <span class="day" onclick="addEvent(this)">11</span>
+            <span class="day" onclick="addEvent(this)">12</span>
+            <span class="day" onclick="addEvent(this)">13</span>
+            <span class="day" onclick="addEvent(this)">14</span>
+            <span class="day" onclick="addEvent(this)">15</span>
+            <span class="day" onclick="addEvent(this)">16</span>
+            <span class="day" onclick="addEvent(this)">17</span>
+            <span class="day" onclick="addEvent(this)">18</span>
+            <span class="day" onclick="addEvent(this)">19</span>
+            <span class="day" onclick="addEvent(this)">20</span>
+            <span class="day" onclick="addEvent(this)">21</span>
+            <span class="day" onclick="addEvent(this)">22</span>
+            <span class="day" onclick="addEvent(this)">23</span>
+            <span class="day" onclick="addEvent(this)">24</span>
+            <span class="day" onclick="addEvent(this)">25</span>
+            <span class="day" onclick="addEvent(this)">26</span>
+            <span class="day" onclick="addEvent(this)">27</span>
+            <span class="day" onclick="addEvent(this)">28</span>
+            <span class="day" onclick="addEvent(this)">29</span>
+            <span class="day" onclick="addEvent(this)">30</span>
+            <span class="day" onclick="addEvent(this)">31</span>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script>
+        function addEvent(dayElement) {
+            const eventName = prompt("Enter event name:");
+            if (eventName) {
+                const eventDiv = document.createElement("div");
+                eventDiv.className = "event";
+                eventDiv.textContent = eventName;
+                dayElement.appendChild(eventDiv);
+            }
+        }
+    </script>
+</body>
+
+</html>
