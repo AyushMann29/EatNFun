@@ -131,7 +131,14 @@ cursor: pointer;
 -moz-user-select: none;
 -ms-user-select: none;
 user-select: none;
+z-index: 1 !important;
+margin-left: 20px;
 }
+
+.cardUp {
+    z-index: 1;
+}
+
 .popup .popuptext {
 visibility: hidden;
 width: 160px;
@@ -141,18 +148,19 @@ text-align: center;
 border-radius: 6px;
 padding: 8px 0;
 position: absolute;
-z-index: 3;
-bottom: 125%;
+z-index:3 ;
+bottom:100% ;
+margin-bottom: 25;
 left: 50%;
-margin-left: -80px;
+
 }
+
 
 /* Popup arrow */
 .popup .popuptext::after {
 content: "";
 position: absolute;
 z-index: 6;
-
 top: -20px;
 left: 70%;
 margin-left: 5px;
@@ -252,6 +260,11 @@ align-items: center;
 rotate: -5deg;
 z-index: 1;
 transition: 0.5s;
+}
+
+.cardWhole {
+    /* position: relative; */
+    z-index: 1;
 }
 
 .cardWhole:hover{
