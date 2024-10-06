@@ -31,13 +31,20 @@ function renderMenu(menuItems) {
     // Render all menu items but hide them initially
     menuGrid.innerHTML = menuItems.map(item => {
         return `<div class="menu-item hidden" data-category="${item.category}">
-            <img src="${item.image}" alt="${item.name}">
-            <div class="menu-item-content">
-                <h2 class="menu-item-title">${item.name}</h2>
-                <p class="menu-item-description">${item.description}</p>
-                <button class="menu-item-price">${item.price}</button>
+    <div class="menu-item-content">
+        <div class="menu-item-front">
+            <img src="${item.image}" alt="${item.name}" class="menu-item-image">
+            <h2 class="menu-item-title">${item.name}</h2>
             </div>
-        </div>`;
+            <div class="menu-item-back">
+            <h2>Additional Info</h2> <!-- You can add additional info here -->
+            <p class="menu-item-description">${item.description}</p>
+            <button class="menu-item-price">${item.price}</button>
+            <p>This is some extra content on the back!</p>
+        </div>
+    </div>
+</div>
+`;
     }).join('');
 
     // Show items for the first category by default

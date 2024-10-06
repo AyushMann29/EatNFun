@@ -322,8 +322,8 @@ color: #ffffff;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    width: 250px; /* Set fixed width */
-    height: 350px; /* Set fixed height */
+    width: fit-content; /* Set fixed width */
+    height: fit-content; /* Set fixed height */
     display: flex;
     flex-direction: column;
 }
@@ -334,20 +334,21 @@ color: #ffffff;
 
 .menu-item img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
 }
 
 .menu-item-content {
-    padding: 1rem;
     flex-grow: 1; /* Allow content to grow and fill space */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between; /* Space out content evenly */
 }
 
 .menu-item-title {
-    font-size: 1.2rem;
+    font-family: monospace;
+    text-transform: capitalize;
+    font-size: 0.8rem;
     color: #34495e;
     margin-bottom: 0.5rem;
 }
@@ -742,4 +743,58 @@ body {
 #connect-button:hover{
     background-color: #daece2;
     color: #0BA34E;
+}
+
+
+
+
+
+.menu-item {
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.menu-item-content {
+    width: 200px; /* Fixed width for card */
+    height: 300px; /* Fixed height for card */
+    position: relative; /* Position relative for inner rotation */
+    transform-style: preserve-3d; /* Preserve 3D for child elements */
+    transition: transform 0.6s; /* Smooth transition */
+}
+
+.menu-item:hover .menu-item-content {
+    transform: rotateY(180deg); /* Rotate card on hover */
+}
+
+.menu-item-front, .menu-item-back {
+    position: absolute; /* Position absolutely for front/back */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    backface-visibility: hidden; /* Hide back face */
+}
+
+.menu-item-back {
+    transform: rotateY(180deg); /* Rotate back face */
+}
+
+/* Style the content for front and back */
+.menu-item-front {
+    background-color: #fff; /* Front background color */
+    color: black; /* Front text color */
+    display: flex; /* Flex for centering */
+    flex-direction: column; /* Column layout */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.menu-item-back {
+    background-color: #ffffff; /* Back background color */
+    color: white; /* Back text color */
+    display: flex; /* Flex for centering */
+    flex-direction: column; /* Column layout */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 8px; /* Rounded corners */
 }

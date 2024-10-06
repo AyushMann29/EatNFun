@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="light-mode">
     <nav class="light-mode">
         <h1>Eat-N-Fun</h1>
@@ -48,110 +50,116 @@
 
         </div>
 
-         <div class="nav-elem">
-                <h4>Contact Us</h4>
-                <div class="dropdown">
-                    <a href="Contact_Us/contact.html"><h5><span>Manager</span></h5></a>
-                    <a href="Contact_Us/contact.html"><h5><span>Co-Manager</span></h5></a>
-                    <a href="Contact_Us/contact.html"><h5><span>Reception</span></h5></a>
-                </div>
-            </div>
-            
         <div class="nav-elem">
-            <button id="mode-toggle" >🌙</button>
+            <h4>Contact Us</h4>
+            <div class="dropdown">
+                <a href="Contact_Us/contact.html">
+                    <h5><span>Manager</span></h5>
+                </a>
+                <a href="Contact_Us/contact.html">
+                    <h5><span>Co-Manager</span></h5>
+                </a>
+                <a href="Contact_Us/contact.html">
+                    <h5><span>Reception</span></h5>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-elem">
+            <button id="mode-toggle">🌙</button>
 
         </div>
-        
+
     </nav>
-    
+
     <div class="btn"></div>
-        <button id="connect-button">Connect<br>
-            <i class="fa fa-pencil" style="font-size:24px"></i>
-        </button>
-        
+    <button id="connect-button">Connect<br>
+        <i class="fa fa-pencil" style="font-size:24px"></i>
+    </button>
+
     </div>
-    
-    
-   
-    
+
+
+
+
 
     <div class="cardContainer">
         <div class="cardWhole" id="cardWhole1" href=#cardContainer>
-        <span id="cardDown" class="card">
-          <p class="mainPageText">Home</p>
-        </span>
-        <span id="cardUp" class="card">
-        </span>
-        </div>
-    
-        <div class="cardWhole" id="cardWhole2" onclick="myFunction1()">
-        <span id="cardDown" class="card popuptext">
-            <div class="popup">
-                <span class="popuptext" id="myPopup1">Manager : 102894798!</span>
-              </div>
-          <p class="mainPageText">Contact</p>
-        </span>
-        <span id="cardUp" class="card">
-        </span>
-        </div>
-  
-    
-        <div class="cardWhole" id="cardWhole3" onclick="menu()">
-        <span id="cardDown" class="card">
-          <p class="mainPageText">Menu</p>
-        </span>
-        <span id="cardUp" class="card">
-        </span>
+            <span id="cardDown" class="card">
+                <p class="mainPageText">Home</p>
+            </span>
+            <span id="cardUp" class="card">
+            </span>
         </div>
 
-      
-      
-      
-      
-        <div class="cardWhole" id="cardWhole4">
-        <span id="cardDown" class="card">
-          <p class="mainPageText">Games</p>
-        </span>
-        <span id="cardUp3" class="card">
-        </span>
+        <div class="cardWhole" id="cardWhole2" onclick="myFunction1()">
+            <span id="cardDown" class="card popuptext">
+                <div class="popup">
+                    <span class="popuptext" id="myPopup1">Manager : 102894798!</span>
+                </div>
+                <p class="mainPageText">Contact</p>
+            </span>
+            <span id="cardUp" class="card">
+            </span>
         </div>
-    
+
+
+        <div class="cardWhole" id="cardWhole3" onclick="menu()">
+            <span id="cardDown" class="card">
+                <p class="mainPageText">Menu</p>
+            </span>
+            <span id="cardUp" class="card">
+            </span>
+        </div>
+
+
+
+
+
+        <div class="cardWhole" id="cardWhole4">
+            <span id="cardDown" class="card">
+                <p class="mainPageText">Games</p>
+            </span>
+            <span id="cardUp3" class="card">
+            </span>
+        </div>
+
         <div class="cardWhole" id="cardWhole5" onclick="myFunction3()">
             <span id="cardDown" class="card popuptext">
                 <div class="popup">
                     <span class="popuptext" id="myPopup3">30% off with codedex club membership!</span>
-                  </div>
-          <p class="mainPageText">Events</p>
-        </span>
-        <span id="cardUp3" class="card">
-        </span>
+                </div>
+                <p class="mainPageText">Events</p>
+            </span>
+            <span id="cardUp3" class="card">
+            </span>
         </div>
-    
+
         <div class="cardWhole" id="cardWhole6" onclick="myFunction2()">
-        <span id="cardDown" class="card">
-            <div class="popup" onclick="myFunction()">
-                <span class="popuptext" id="myPopup2">A place best for everyone to enjoy and have fun!</span>
-                </span>
-              </div>
-          <p class="mainPageText">About</p>
+            <span id="cardDown" class="card">
+                <div class="popup" onclick="myFunction()">
+                    <span class="popuptext" id="myPopup2">A place best for everyone to enjoy and have fun!</span>
+            </span>
+        </div>
+        <p class="mainPageText">About</p>
         </span>
         <span id="cardUp3" class="card">
         </span>
-        </div>
-      </div>
-    
-      <div class="menu-container" style="margin-top: 20%;">
+    </div>
+    </div>
+    <!-- card  -->
+    <div class="menu-container" style="margin-top: 20%;">
         <h1 class="menu-title">Cafeteria Menu</h1>
         <div id="categoryButtons" class="category-buttons"></div> <!-- Category buttons here -->
         <div id="menuGrid" class="menu-grid"></div> <!-- Menu items grid here -->
     </div>
-    
-    
-<br><br><br><br>
+
+
+    <br><br><br><br>
     <footer class="footer">
         <div class="footer-content">
             <h2 class="brand-name">EatNFun</h2>
-<br><br>
+            <br><br>
             <div class="social-icons">
                 <a href="#" class="social-icon"><i class='bx bxl-facebook'></i></a>
                 <a href="#" class="social-icon"><i class='bx bxl-twitter'></i></a>
@@ -165,11 +173,14 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script src="dark.js"></script>
     <script src="menu.js"></script>
 </body>
-</html> 
+
+</html>
