@@ -811,3 +811,43 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     border-radius: 8px; /* Rounded corners */
 }
+nav h1 {
+    font-size: 4.5vw; /* Increased from 3.6vw */
+    font-weight: bold;
+    margin-top: -15px;
+    margin-left: -65px;
+    color: #0BA34E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-elem h4 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: 700;
+    color: #0e601e !important;
+    font-size: 1.5vw; /* Increased from 1.1vw */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-elem h5 {
+    font-size: 1.3vw; /* Increased from 1.2vw */
+    margin-bottom: 1vw;
+    padding: 10px; /* Added padding for better spacing */
+    cursor: pointer;
+}
+
+.nav-elem h5 span {
+    font-size: 1.3vw; /* Adjusted for dropdown items */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+nav button {
+    font-size: 1vw; /* Increased from 0.85vw */
+    padding: 14px 14px; /* Adjusted padding */
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
