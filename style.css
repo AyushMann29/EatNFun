@@ -27,6 +27,12 @@ font-weight: 700;
     gap: 60px;
 }
 
+#logo{
+    width: 75px;
+    margin: -20px 45px 0 0;
+    height: auto;
+}
+
 .nav-elem:hover .dropdown {
 display: block; 
 color: #178693;
