@@ -516,12 +516,16 @@ body.dark-mode {
 nav {
     background-color: #daece2;
     color: #00961b !important;
+    position: fixed !important;
     transition: background-color 0.3s ease;
 }
 
 nav.light-mode {
     background-color: #daece2; 
     color: #00961b !important;
+    position: fixed !important;
+
+
 }
 
 nav.dark-mode {
