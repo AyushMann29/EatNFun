@@ -397,16 +397,34 @@ font-weight: bold;
 }
 
 .social-icons {
-margin-bottom: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .social-icon {
+
 display: inline-block;
 margin: 0 10px;
 color: white;
 font-size: 1.5rem;
 transition: color 0.3s ease;
 }
+
+.social-icon img {
+width: 24px;
+height: 24px;
+position: relative;
+top: 3px;
+filter: brightness(0) invert(1);
+transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(32%) saturate(1659%) hue-rotate(357deg) brightness(103%) contrast(97%);
+}
+
+
 
 .social-icon:hover {
 color: #f39c12;
