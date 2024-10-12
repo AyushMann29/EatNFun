@@ -57,3 +57,6 @@ document.getElementById("scrollBtn").addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
 });
 
+function calender(){
+    window.location.href = "eventcalender.html";
+}
