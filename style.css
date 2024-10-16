@@ -212,7 +212,7 @@ background-color: transparent;
 }
 #cardUp{
 border: solid #ffffff;
-z-index: 2;
+z-index: -1;
 border-width: 3.75vh 1.5vw 8vh 1.5vw;
 rotate: 5deg;
 box-shadow: 10px 10px 10px;
