@@ -766,8 +766,8 @@ body {
 }
 
 .menu-item-content {
-    width: 200px; /* Fixed width for card */
-    height: 300px; /* Fixed height for card */
+    width: 250px; /* Fixed width for card */
+    height: 400px; /* Fixed height for card */
     position: relative; /* Position relative for inner rotation */
     transform-style: preserve-3d; /* Preserve 3D for child elements */
     transition: transform 0.6s; /* Smooth transition */
