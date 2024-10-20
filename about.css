@@ -1,13 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw0aXpsog.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
 /* navbar */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: url('images/about-bg.jpg') no-repeat center center fixed;
+    font-family: 'Montserrat';
+    background: url('https://i.pinimg.com/enabled_lo/564x/67/d1/96/67d1966f6951ce7bc9991fb694567497.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
 }
 
-.about-container {
+
+/* Import the Montserrat font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Apply the font to the body to make it the default font for the entire document */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Alternatively, apply the font to specific elements */
+h1, h2, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* aout us stylying */
+#about-us{
+   height:100vh;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("https://i.pinimg.com/564x/59/04/9b/59049b8b545d6246566f44013386b0c9.jpg");
+  
+    /* Set a specific height */
+    /* min-height: 500px; */
+    min-height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: Center;
+  }
+
+  .parallax h1{
+    font-size: 10vh;
+    line-height: 20vh;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', cursive;
+  }
+
+  .parallax span{
+    font-size: 20vh;
+    /* color: green; */
+    letter-spacing: 40px;
+  }
+
+  #word{
+    color: green;
+  }
+#about, #history, #team, #cta {
+    min-width: 100%;
+    padding: 60px 20px;
+    /* background: #111; */
+    /* margin:     0px auto; */
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    background: #ffff;
+}
+#left{
+    max-width: 30%;
+}
+#cta {
+    background-color: #f8e1d4;
+}
+
+.container {
+    /* max-width: 90vh; */
+    margin: 0 auto;
+    padding: 0 10vh;
+    filter: blur(0px);
+}
+
+
+.container p{
+    font-size: 1rem;
+    text-align: left;
+    line-height:30px;
+    filter: blur(0px);
+}
+.container-about{
+    display: flex;
+    
+}
+#left h2{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align:left;
+    color: green;
+}
+
+#right{
+   max-width: 70%;
+}
+
+#right img{
+    height:100%;
+    width: 100%;
+    padding-left:50px;
+}
+
+#history {
+    background-image: url("https://images.pexels.com/photos/2193600/pexels-photo-2193600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 60vh;
+    overflow: hidden; /* Ensure the pseudo-element stays inside the section */
+}
+
+#history::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 224, 13, 0.218);
+    
+    filter: blur(10px);
+    
+    /* z-index: -1;  */
+}
+
+#history > * {
+    /* position:relative; */
+    /* z-index: 1; Keeps content above the blurred background */
+}
+
+.container-history{
+    color:#fff;
+}
+/* about us styling ends here  */
+
+/* .about-container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -33,7 +186,7 @@ h1 {
 
 .team-member {
     text-align: center;
-}
+} */
 
 /* footer */
 .team-member img {
