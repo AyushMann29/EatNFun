@@ -10,7 +10,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat';
-    background: url('https://i.pinimg.com/enabled_lo/564x/67/d1/96/67d1966f6951ce7bc9991fb694567497.jpg') no-repeat center center fixed;
+    /* background: url('https://i.pinimg.com/enabled_lo/564x/67/d1/96/67d1966f6951ce7bc9991fb694567497.jpg') no-repeat center center fixed; */
     background-size: cover;
     color: #333;
 }
@@ -94,7 +94,7 @@ h1, h2, p {
     /* max-width: 90vh; */
     margin: 0 auto;
     padding: 0 10vh;
-    filter: blur(0px);
+    /* filter: blur(0px); */
 }
 
 
@@ -212,6 +212,44 @@ h1, h2, p {
     padding-top:20px;
     letter-spacing: 5px;
 }
+
+
+.container-team {
+    padding: 50px;
+}
+
+.container-team span{
+    color: green;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.profile {
+    display: inline-block;
+    margin: 0 150px;
+
+}
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    clip-path: circle();
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: green;
+}
+.title {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+
 
 /* about us styling ends here  */
 
