@@ -1,7 +1,7 @@
 # EatNFun
 
 Welcome to **EatNFun**, the ultimate destination for board game enthusiasts who love boba tea and small bites! Our website offers a vibrant space for gamers to indulge in fun activities while enjoying delicious refreshments.
-
+Trying repo PR
 ---
 
 ## 🎯 Project Overview
